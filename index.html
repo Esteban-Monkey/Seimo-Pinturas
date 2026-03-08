@@ -1,90 +1,148 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
 <meta charset="UTF-8">
-<title>Seimo999Pinturas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Semon Pintura</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-body{
-font-family: Arial;
-background-color:#f4f4f4;
-text-align:center;
-}
 
-header{
-background-color:#333;
+.hero{
+background:url("https://picsum.photos/1600/600") center/cover no-repeat;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
 color:white;
-padding:20px;
+text-shadow:2px 2px 5px black;
 }
 
-img{
-
-width:200px;
+.social a{
 margin:10px;
-}
-
-.redes a{
-margin:10px;
-text-decoration:none;
 font-size:20px;
+text-decoration:none;
 }
 
 footer{
-margin-top:30px;
-padding:10px;
-background:#333;
+background:#222;
 color:white;
+padding:20px;
+margin-top:40px;
 }
+
 </style>
 
 </head>
 
 <body>
 
+<!-- MENU -->
 
-<header>
-<h1>Bienvenido a mi página</h1>
-<p>Mis enlaces, imágenes y redes sociales</p>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
 
-<h2>Sobre mí</h2>
-<p>Hola, esta es mi página web personal.</p>
+<a class="navbar-brand" href="#">Semon Pintura</a>
 
-<h2>Mis imágenes</h2>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-<img src="imagen1.jpg">
-<img src="imagen2.jpg">
-<img src="imagen3.jpg">
+<div class="collapse navbar-collapse" id="menu">
 
-<h2>Enlaces interesantes</h2>
+<ul class="navbar-nav ms-auto">
 
-<p>
-<a href="https://m.youtube.com/watch?v=tGseaf6P6Q4&pp=iggCQAE%3D&fbclid=PAb21jcAQafH5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacuIgRFjlZl2DMOM9-ilBQNR67cHi5EjLZ42pYQakPZ5OrcJyBNejO6I-xFWA_aem_KIzMPut3SO7Zv4rHcHgVPw">Ir a 
+<li class="nav-item">
+<a class="nav-link" href="#">Inicio</a>
+</li>
 
-YouTube</a>
-</p>
+<li class="nav-item">
+<a class="nav-link" href="#galeria">Galería</a>
+</li>
 
-<p>
-<a href="https://google.com">Ir a Google</a>
-</p>
+<li class="nav-item">
+<a class="nav-link" href="#redes">Redes</a>
+</li>
 
-<h2>Mis redes sociales</h2>
-
-<div class="redes">
-
-<a href= "https://www.instagram.com/seimo999?igsh=MWozd3Y5ZjVraHBjdw==" >Instagram</a>
-
-<a href="https://twitter.com">Twitter</a>
-
-<a href="https://facebook.com">Facebook</a>
+</ul>
 
 </div>
 
+</div>
+</nav>
 
-<footer>
-<p>© 2026 Mi página web</p>
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="text-center">
+
+<h1>SeimoPinturas</h1>
+
+<p>Trabajos de pintura profesional</p>
+
+<a class="btn btn-primary m-2" href="#galeria">Ver trabajos</a>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<div class="container mt-5" id="galeria">
+
+<h2 class="text-center mb-4">Galería</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+<img src="https://picsum.photos/400/300" class="img-fluid rounded">
+</div>
+
+<div class="col-md-4 mb-3">
+<img src="https://picsum.photos/401/300" class="img-fluid rounded">
+</div>
+
+<div class="col-md-4 mb-3">
+<img src="https://picsum.photos/402/300" class="img-fluid rounded">
+</div>
+
+</div>
+
+</div>
+
+<!-- REDES -->
+
+<div class="container text-center mt-5" id="redes">
+
+<h2>Sígueme</h2>
+
+<div class="social">
+
+<a class="btn btn-danger" href="https://m.youtube.com/watch?v=tGseaf6P6Q4&pp=iggCQAE%3D&fbclid=PAb21jcAQafH5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAacuIgRFjlZl2DMOM9-ilBQNR67cHi5EjLZ42pYQakPZ5OrcJyBNejO6I-xFWA_aem_KIzMPut3SO7Zv4rHcHgVPw" target="_blank">YouTube</a>
+
+<a class="btn btn-primary" href="https://facebook.com" target="_blank">Facebook</a>
+
+<a class="btn btn-info" href="https://twitter.com" target="_blank">Twitter</a>
+
+<a class="btn btn-dark" href="https://www.instagram.com/seimo999?igsh=MWozd3Y5ZjVraHBjdw==" target="_blank">Instagram</a>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="text-center">
+
+<p>© 2026 Semon Pintura</p>
+
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
